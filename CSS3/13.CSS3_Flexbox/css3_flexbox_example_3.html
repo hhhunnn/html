@@ -12,11 +12,12 @@
             height: 800px;
             background-color: rgba(0,0,0,0.15);
             display: flex;
+            gap: 8px; /* margin과 달리 왼쪽 맨 앞에 간격안생기게 간격 띄우기 */
 
             /* 가운데 가로로 정렬 */
-            /* flex-direction: row;
+            flex-direction: row;
             justify-content: center;
-            align-items: center; */
+            align-items: center;
             
             /* 가운데 세로로 정렬 */
             /* flex-direction: column;
@@ -28,19 +29,27 @@
             justify-content: center;  */
             /* ㄴ 주축이 어딘지 생각하고 해야함 align-items: center;를 하면 위쪽 가운데로 정렬됨 */
 
-            flex-direction: column;
-            justify-content: space-between; 
-            align-items: center;
+            /* flex-direction: column;
+            justify-content: side-; 
+            align-items: space-between; */
         }
 
         .flex-item {
             width: 100px;
             height: 100px;
             border: 1px solid black;
+            /* 왼쪽 맨앞에도 간격 생김 */
+            /* margin-left: 8px;  */
             background-color: rgba(255,0,0,0.7);
             font-size: 24px;
             font-weight: 900;
+            flex-grow: 1;
         }
+        /* margin 사용 시 첫번째 간격 없애기 */
+        /* .flex-item:first-child {
+            margin-left: 0px;
+        } */
+
     </style>
 
 </head>
@@ -49,7 +58,6 @@
         <div class="flex-item">1</div>
         <div class="flex-item">2</div>
         <div class="flex-item">3</div>
-        <div class="flex-item">4</div>
     </div>
     
 </body>
