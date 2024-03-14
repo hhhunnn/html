@@ -52,25 +52,25 @@
         /* 요소의 특정 부분에 스타일을 적용할 때 사용  */
 
         /* "::first-letter" : 컨텐츠의 첫 글자를 선택 */
-        
+        .pseudo1::first-letter { font-size: 48px; }
 
         /* "::first-line" : 컨텐츠의 첫 줄을 선택 */
+        .pseudo1::first-line { color: rgba(255, 0, 0, 0.7); }
 
-        /* "::after" : 컨텍츠의 뒤에 있는 위치를 선택 */
+        /* "::after" : 컨텐츠의 뒤에 있는 위치를 선택 */
         .pseudo2::after {
-            content:'after 가상요소';
-            color:rgba(255,0,0,0.7);
+            content: 'after 가상요소';
+            color: rgba(255, 0, 0, 0.7);
         }
 
         /* "::before" : 컨텐츠의 앞에 있는 위치를 선택 */
         .pseudo2::before {
-            content:'before 가상요소';
-            color:rgba(0,0,255,0.7);
+            content: 'before 가상요소';
+            color: rgba(0, 0, 255, 0.7);
         }
 
-        /* "::selection" : 드래그한 컨텐츠를 선택 (여러 브라우저에서 지원X) */
-        .pseudo2::selection {background-color:rgba(255,255,0,0.7);}
-
+        /* "::selection" : 드래그한 컨텐츠를 선택 (여러 브라우저에서 지원 X) */
+        .pseudo2::selection { background-color: rgba(255, 255, 0, 0.7); }
 
     </style>
 </head>

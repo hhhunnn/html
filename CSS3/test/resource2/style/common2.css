@@ -1,0 +1,188 @@
+@font-face {
+    font-family: KakaoRegular;
+    src: url('../font/kakao_fonts/KakaoRegular.ttf');
+}
+
+@font-face {
+    font-family: KakaoBold;
+    src: url('../font/kakao_fonts/KakaoBold.ttf');
+}
+
+* {
+    font-family: 'KakaoRegular', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    /* min-width: 1712px; */
+}
+
+.box-news {
+    display: grid;
+    grid-template: 
+        "kakao1 kakao2"
+        / 1fr 1fr;
+    box-sizing: border-box;
+    justify-content: space-around;
+    /* column-gap: 15px; */
+
+}
+
+.news-card {
+    background-color: rgba(240,240,240,1);
+    border-radius: 24px;
+    width: 420px;
+    height: 94px;
+    display: inline-block;
+    align-items: center;
+    padding: 24px;
+    margin: 0px 6px;
+}
+
+.title {
+    padding: 4px 12px;
+    display: flex;
+    border-radius: 8px;
+    font-size: 12px;
+    letter-spacing: -.2px;
+}
+
+.alim {
+    background-image: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562f7bc017800001.png);
+    width: 38px;
+    height: 38px;
+    content: "";
+    background-size: 100%;
+    vertical-align: top;
+    margin: 0px 12px 0px 0px;
+    
+}
+
+.board {
+    background-color: rgba(255,255,255,1);
+    font-size: 12px;
+    padding: 4px 12px;
+    margin: 0px 6px 0px 0px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 6px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 8px;
+
+}
+
+.date {
+    font-size: 12px;
+    padding: 4px 12px;
+    margin: 0px 6px 0px 0px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 6px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 8px;
+
+}
+
+.more {
+    font-size: 24px;
+    margin: 0em 0em 0em 7em;
+}
+
+
+
+
+
+/* cont-main */
+.cont-main {
+    display: grid;
+    grid-template: 
+        "all-news press-release reference-materials"
+        / 1fr 1fr 1fr;
+    margin: 12px 0px 0px 0px;
+    justify-content: space-around;
+    /* column-gap: 10px; */
+
+}
+
+.other {
+    background-color: rgba(240,240,240,1);
+    border-radius: 24px;
+    width: 260px;
+    height: 26px;
+    letter-spacing: -.2px;
+    display: inline-block;
+    justify-content: space-between;
+    padding: 24px;
+    margin: 0px 6px;
+    /* gap: 4px; */
+}
+
+.more-news {
+    line-height: 26px;
+    /* font-size: 24px; */
+    display: flex;
+    justify-content: left;
+    align-items: stretch;
+}
+
+.round-black {
+    width: 24px;
+    background-color: rgba(0,0,0,1);
+    color: rgba(255,255,255,1);
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    /* font-size: 16px; */
+    justify-content: right;
+
+
+}
+
+
+/* 마우스를 올렸을 때 */
+.other:hover {
+    cursor: pointer;
+}
+
+.other:hover .round-black {
+    background-color: rgba(0,0,0,0.8);
+
+}
+
+.other {
+    background-color: rgba(240,240,240,1);
+    border-radius: 24px;
+
+    width: 260px;
+    height: 26px;
+    letter-spacing: -.2px;
+    /* grid-area: press-release; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 24px;
+    margin: 0px 6px;
+    /* gap: 4px; */
+}
+
+.other {
+    background-color: rgba(240,240,240,1);
+    border-radius: 24px;
+
+    width: 260px;
+    height: 26px;
+    letter-spacing: -.2px;
+    /* grid-area: reference-materials; */
+    display: flex;
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    padding: 24px;
+    margin: 0px 6px;
+
+    /* gap: 4px; */
+}
