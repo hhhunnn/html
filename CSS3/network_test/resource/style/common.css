@@ -1,0 +1,191 @@
+@font-face {
+    font-family: KakaoRegular;
+    src: url('../font/KakaoRegular.ttf');
+}
+
+@font-face {
+    font-family: KakaoBold;
+    src: url('../font/KakaoBold.ttf');
+}
+
+* {
+    font-family: 'KakaoRegular', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    /* min-width: 1712px; */
+}
+
+/* #wrapper {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    width: 1712px;
+} */
+
+.box-news {
+    display: grid;
+    grid-template: 
+        "kakao1 kakao2"
+        / 1fr 1fr;
+    box-sizing: border-box;
+    justify-content: space-around;
+    /* column-gap: 15px; */
+
+}
+
+.news-card {
+    background-color: rgba(240,240,240,1);
+    border-radius: 24px;
+    width: 768px;
+    height: 94px;
+    display: inline-block;
+    align-items: center;
+    padding: 36px 40px;
+
+    margin: 0px 6px;
+}
+
+.title {
+    padding: 4px 12px;
+    /* display: flex; */
+    border-radius: 8px;
+    font-size: 12px;
+    letter-spacing: -.2px;
+    /* flex-direction: row; */
+}
+
+.left {
+    display: inline-block;
+}
+.left { float: left; }
+
+.right {
+    display: inline-block;
+}
+.right { float: right; }
+
+
+.alim {
+    background-image: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562f7bc017800001.png);
+    width: 38px;
+    height: 38px;
+    content: "";
+    background-size: 100%;
+    vertical-align: top;
+    margin-right: 12px;
+    display: inline-block;
+}
+
+.board {
+    background-color: rgba(255,255,255,1);
+    font-size: 14px;
+    padding: 4px 12px;
+    margin-top: 2.5px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    align-items: center;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 8px;
+
+}
+
+.date {
+    font-size: 14px;
+    padding: 4px 12px;
+    margin-top: 2.5px;
+    display: inline-block;
+    vertical-align: top;
+
+    text-align: center;
+    align-items: center;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 8px;
+
+}
+
+.more {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/64/64576.png');
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-size: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 7px 0px 0px 0px;
+
+}
+
+.main {
+    width: 768px;
+    height: 52px;
+    display: flex;
+    margin-top: 50px;
+    font-size: 26px;
+}
+
+
+
+/* cont-main */
+
+.cont-main {
+    display: grid;
+    grid-template: 
+        "all-news press-release reference-materials" 38px
+        / 1fr 1fr 1fr;
+    margin: 12px 0px 0px 0px;
+    justify-content: space-around;
+    font-size: 24px;
+
+}
+
+.other {
+    background-color: rgba(240,240,240,1);
+    border-radius: 24px;
+    height: 38px;
+    letter-spacing: -.2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 40px;
+    margin: 0px 8px;
+}
+
+.more-news {
+    display: flex;
+}
+
+.go {
+    display: flex;
+    font-size: 16px;
+    gap:10px;
+}
+.round-black {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(0,0,0,1);
+    color: rgba(255,255,255,1);
+    text-align: center;
+    border-radius: 50%;
+    line-height: 24px;
+}
+
+
+/* 마우스를 올렸을 때 */
+.other:hover {
+    cursor: pointer;
+}
+
+.other:hover .round-black {
+    background-color: rgba(0,0,0,0.8);
+
+}
